@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.principalController">
+   <left>
+      <VBox prefHeight="697.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btn_inicio" alignment="BASELINE_LEFT" onAction="#inicio" prefHeight="48.0" prefWidth="240.0" text="Início">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_estacionamentos" alignment="BASELINE_LEFT" onAction="#estacionamento" prefHeight="48.0" prefWidth="240.0" text="Estacionamentos">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/placeholder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_addEstacionamento" alignment="BASELINE_LEFT" onAction="#addestacionamento" prefHeight="48.0" prefWidth="240.0" text="Adicionar Estacionamento">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/parking.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_addUsuario" alignment="BASELINE_LEFT" prefHeight="48.0" prefWidth="240.0" text="Adicionar Usuário">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/add-contact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_planos" alignment="BASELINE_LEFT" prefHeight="48.0" prefWidth="240.0" text="Planos">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/wedding-planning.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_sair" alignment="BASELINE_LEFT" onAction="#sair" prefHeight="48.0" prefWidth="240.0" text="Sair">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Javanese Text" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelPrincipal" onDragDetected="#inicio" text="STACIONE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Javanese Text" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPrincipal" prefHeight="697.0" prefWidth="762.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
