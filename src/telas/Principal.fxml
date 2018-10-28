@@ -52,23 +52,11 @@
                   <Font name="Javanese Text" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btn_addUsuario" alignment="BASELINE_LEFT" prefHeight="48.0" prefWidth="240.0" text="Adicionar Usuário">
+            <JFXButton fx:id="btn_addUsuario" alignment="BASELINE_LEFT" onAction="#addusuario" prefHeight="48.0" prefWidth="240.0" text="Adicionar Usuário">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../imagens/add-contact.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Javanese Text" size="16.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btn_planos" alignment="BASELINE_LEFT" prefHeight="48.0" prefWidth="240.0" text="Planos">
-               <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagens/wedding-planning.png" />
                      </image>
                   </ImageView>
                </graphic>

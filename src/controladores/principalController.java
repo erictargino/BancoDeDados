@@ -39,9 +39,6 @@ public class principalController {
     private JFXButton btn_addUsuario;
 
     @FXML
-    private JFXButton btn_planos;
-
-    @FXML
     private JFXButton btn_sair;
 
     @FXML
@@ -73,6 +70,16 @@ public class principalController {
                 Parent addestacionamento =  FXMLLoader.load(getClass().getResource("/telas/AddEstacionamento.fxml"));
                 borderPrincipal.setCenter(addestacionamento);
                 labelPrincipal.setText("ADICIONAR ESTACIONAMENTOS");
+        } catch (IOException e) {
+                e.printStackTrace();
+        }	
+    }
+    @FXML
+    private void addusuario() {
+        try {
+                Parent addusuario =  FXMLLoader.load(getClass().getResource("/telas/AddUsuario.fxml"));
+                borderPrincipal.setCenter(addusuario);
+                labelPrincipal.setText("ADICIONAR USUÁRIO");
         } catch (IOException e) {
                 e.printStackTrace();
         }	
