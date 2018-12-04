@@ -6,11 +6,12 @@
 package controladores;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableView;
 import javafx.scene.layout.VBox;
 
 /**
@@ -18,18 +19,24 @@ import javafx.scene.layout.VBox;
  *
  * @author erict
  */
-public class AddEstacionamento implements Initializable {
+public class AddCarro implements Initializable {
 
     @FXML
-    private VBox vboxAddEstacionamento;
+    private VBox vboxAddCarro;
     @FXML
-    private TableView<?> tableAddEstacionamento;
+    private JFXComboBox<?> carroVeiculo;
     @FXML
-    private JFXButton btn_AddEstacionamento;
+    private JFXTextField carroPlaca;
     @FXML
-    private JFXButton btn_RemoverEstacionamento;
+    private JFXTextField carroModelo;
     @FXML
-    private JFXButton btn_EditarEstacionamento;
+    private JFXTextField carroCor;
+    @FXML
+    private JFXButton btn_AddCarro;
+    @FXML
+    private JFXButton btn_EditarCarro;
+    @FXML
+    private JFXButton btn_RemoverCarro;
 
     /**
      * Initializes the controller class.

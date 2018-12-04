@@ -31,7 +31,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="762.0">
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="762.0">
          <children>
             <JFXButton fx:id="btn_reservarEstacionamentos" prefHeight="55.0" prefWidth="140.0" style="-fx-background-color: green;" text="Reservar" textFill="WHITE">
                <font>

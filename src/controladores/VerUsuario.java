@@ -11,25 +11,20 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableView;
-import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
  *
  * @author erict
  */
-public class AddEstacionamento implements Initializable {
+public class VerUsuario implements Initializable {
 
     @FXML
-    private VBox vboxAddEstacionamento;
+    private TableView<?> table_VerUsuario;
     @FXML
-    private TableView<?> tableAddEstacionamento;
+    private JFXButton btn_AddCarro;
     @FXML
-    private JFXButton btn_AddEstacionamento;
-    @FXML
-    private JFXButton btn_RemoverEstacionamento;
-    @FXML
-    private JFXButton btn_EditarEstacionamento;
+    private JFXButton btn_RemoverUsuario;
 
     /**
      * Initializes the controller class.

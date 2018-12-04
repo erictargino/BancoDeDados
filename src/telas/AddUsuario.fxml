@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
@@ -10,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vboxAddUsuário" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AddUsuario">
+<VBox fx:id="vboxAddUsuário" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AddUsuario">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagens/add-contact.png" />
          </image>
@@ -22,7 +21,7 @@
       </ImageView>
       <JFXTextField fx:id="usuarioNome" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="Nome" unFocusColor="#2a5fff">
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="50.0" />
          </VBox.margin>
          <font>
             <Font name="Javanese Text" size="13.0" />
@@ -30,7 +29,7 @@
       </JFXTextField>
       <JFXTextField fx:id="usuarioCnh" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="N° CNH" unFocusColor="#2a5fff">
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="50.0" />
          </VBox.margin>
          <font>
             <Font name="Javanese Text" size="13.0" />
@@ -38,57 +37,20 @@
       </JFXTextField>
       <JFXTextField fx:id="usuarioCpf" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="N° CPF" unFocusColor="#2a5fff">
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="50.0" />
          </VBox.margin>
          <font>
             <Font name="Javanese Text" size="13.0" />
          </font>
       </JFXTextField>
-      <JFXComboBox fx:id="usuarioVeiculo" focusColor="BLACK" prefHeight="31.0" prefWidth="203.0" promptText="Veículo" unFocusColor="#2a5fff">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-      </JFXComboBox>
-      <JFXTextField fx:id="usuarioPlaca" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="Placa" unFocusColor="#2a5fff">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-         <font>
-            <Font name="Javanese Text" size="13.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="usuarioModelo" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="Modelo" unFocusColor="#2a5fff">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-         <font>
-            <Font name="Javanese Text" size="13.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="usuarioChassis" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="Chassis" unFocusColor="#2a5fff">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-         <font>
-            <Font name="Javanese Text" size="13.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="usuarioCor" focusColor="BLACK" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="310.0" promptText="Cor" unFocusColor="#2a5fff">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-         <font>
-            <Font name="Javanese Text" size="13.0" />
-         </font>
-      </JFXTextField>
-      <HBox alignment="CENTER" prefHeight="172.0" prefWidth="792.0">
+      <HBox alignment="CENTER" prefHeight="332.0" prefWidth="762.0">
          <children>
-            <JFXButton fx:id="btn_AddUsuario" prefHeight="51.0" prefWidth="119.0" style="-fx-background-color: green;" text="Adicionar" textFill="WHITE">
+            <JFXButton fx:id="btn_AddUsuario" prefHeight="63.0" prefWidth="158.0" style="-fx-background-color: green;" text="Adicionar" textFill="WHITE">
                <font>
                   <Font name="Javanese Text" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btn_VerUsuarios" prefHeight="51.0" prefWidth="119.0" style="-fx-background-color: red;" text="Ver Usuários" textFill="WHITE">
+            <JFXButton fx:id="btn_VerUsuarios" prefHeight="63.0" prefWidth="158.0" style="-fx-background-color: red;" text="Ver Usuários" textFill="WHITE">
                <HBox.margin>
                   <Insets left="50.0" />
                </HBox.margin>
